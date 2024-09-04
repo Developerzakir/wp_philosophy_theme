@@ -15,6 +15,8 @@ function philosophy_setup_theme()
     add_theme_support('post-formats',array('image','gallery','quote','audio','video','link'));
     add_editor_style('/assets/css/editor-style.css');
 
+    register_nav_menu("topmeny",__("Top Menu","philosophy"));
+
 }
 add_action('after_setup_theme', 'philosophy_setup_theme');
 
